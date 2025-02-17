@@ -1,10 +1,9 @@
 import os
 
 def create_project_structure(folders):
-    # Cria o arquivo main.py
+    # Cria o arquivo main.py sem conteúdo
     main_file = "./main.py"
-    with open(main_file, "w") as file:
-        file.write("# Arquivo main.py para Custom\n")
+    open(main_file, "w").close()
     
     # Cria a pasta src
     src_dir = './src'
@@ -14,7 +13,7 @@ def create_project_structure(folders):
     for folder in folders:
         path_folder = os.path.join(src_dir, folder)
         os.makedirs(path_folder, exist_ok=True)
-        print(f'📂 Pasta criada: {path_folder}')
+        print(f'\U0001F4C2 Pasta criada: {path_folder}')
     
     print("\n✅ Estrutura do projeto criada com sucesso!")
 
