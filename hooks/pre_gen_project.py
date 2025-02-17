@@ -50,4 +50,4 @@ if __name__ == "__main__":
     elif architecture == "MVC - (Models, Views, Controllers)":
         create_project_structure(["models", "views", "controllers"])
     elif architecture == "Automations - by lima":
-        create_project_structure(["models", "views", "services", "tasks", "tests", "utils"])
+        create_project_structure(["models", "views", "controllers", "tasks", "tests", "utils"])
